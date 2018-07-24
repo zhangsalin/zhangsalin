@@ -1,0 +1,25 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class Chuangkou {
+    public static void main(String[]args){
+        JFrame jf=new JFrame("选课系统");
+        JButton l=new JButton("登陆");
+       JButton a=new JButton("退出");
+        jf.setSize(500,600);
+        l.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+                s();
+            }
+        });
+        Panel p=new Panel();
+        p.add(l);
+        p.add(a);
+        jf.add(l);
+        jf.add(a);
+        jf.show();
+    }
+    static void s(){
+        System.out.println("");
+    }
+}
